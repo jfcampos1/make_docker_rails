@@ -17,7 +17,7 @@ then you need to change the ownership of your files with:
 
 After that you need to run your server with:
 
-`docker-compose up`
+`docker-compose up --build`
 
 On a different terminal you need to create you database:
 
