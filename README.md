@@ -19,6 +19,17 @@ After that you need to run your server with:
 
 `docker-compose up --build`
 
+Before create the database you need to add to `config/database.yml` file the following lines:
+```
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: postgres
+  username: postgres
+  password:
+  pool: 5
+```
+
 On a different terminal you need to create you database:
 
 `docker-compose run web rake db:create`
