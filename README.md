@@ -36,7 +36,17 @@ On a different terminal you need to create you database:
 
 And finally you can connect to your App web on this direction `http://localhost:3000`
 
+#### The advantage to make a container with docker-compose you can see it here, you can have a complete app web running in your computer with the correct versions in only minutes. 
 
+You only have to run the following commands in your machine:
+* git clone https://github.com/jfcampos1/grupo-25
+* `docker-compose up --build`
+On another console run this two to set up the database:
+* `docker-compose run web rake db:create`
+* `docker-compose run web rake db:migrate`
+And there you go, you have a running app web on your computer.
+
+And finally you can connect to your App web on this direction `http://localhost:3000`
 
 
 References:
