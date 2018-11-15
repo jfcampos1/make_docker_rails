@@ -24,3 +24,14 @@ On a different terminal you need to create you database:
 `docker-compose run web rake db:create`
 
 And finally you can connect to your App web on this direction `http://localhost:3000`
+
+
+
+
+References:
+
+* https://docs.docker.com/compose/rails/
+
+* https://docs.docker.com/engine/reference/builder/#usage
+
+* https://docs.docker.com/compose/compose-file/
